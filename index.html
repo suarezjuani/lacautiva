@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+	<title>La Cautiva FM 106.7</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="estilos/style.css">
+	<link rel="stylesheet" type="text/css" href="fonts/stylefont.css">
+	<link rel="stylesheet" type="text/css" href="estilos/video-js.css">
+	<meta name="viewport" content="width=device-width, user-scaleble=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<script type="text/javascript" src="js/video.js"></script>
+</head>
+	<body>
+		<!--encabezado-->
+		<div class="contenedor">
+			<header>
+				<div class="encabezado">
+					<div class="barra">
+						<div ><img class="logoprincipal"src="imagenes/logo-inicio.png"></div>
+						<div class="divtex">
+							<h2 class="texto1">EN VIVO</h2>
+						</div>
+					</div>
+				</div>
+			</header>
+			<!--centro-->
+			<div class="centro">
+					<section class="reproductorsector">
+						<div class="repro">
+							<video autoplay="false" class="lc-video video-js vjs-big-play-centered vjs-16-9" controls id="lc-video">
+								<source src="https://freeuk26.listen2myradio.com/live.mp3?typeportmount=s1_17717_stream/;stream.mp3" type="audio/mp3">
+
+							</video>
+						</div>
+					</section>
+					<script>
+						var reproductor = videojs('lc-video', {
+							fluid: true
+						})
+					</script>
+					<div  id="cartelera"><img class="cartelera" src="imagenes/cartelera.jpg"></div>
+					<div class="mediasocial">
+							<a href="" class="redesicon" target="_blank"><span class="icon-instagram"></span></a>
+							<a href="https://www.facebook.com/juaneduardo.suarez.18" class="redesicon" target="_blank"><span class="icon-facebook2"></span></a>
+							<a href="" class="redesicon" target="_blank"><span class="icon-whatsapp"></span></a>
+					</div>
+			</div>
+		</div>
+	</body>
+</html>

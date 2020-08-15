@@ -1,0 +1,176 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+@font-face{
+	font-family: tangerine;
+	src: url(TYPOGRAPHPROExtraBold.ttf);
+}
+body{
+
+	background-color: #0E0E0E;
+}
+.encabezado{
+	overflow: hidden;
+	background-color: #1E1E1E;
+	border-bottom: 5px solid white;
+	height: 100px;
+}
+.barra{
+	overflow: hidden;
+	width: 100%;
+	margin: auto;
+	max-width: 1000px;
+}
+
+.logoprincipal{
+	height: 80px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	float: left;
+}
+.divtex{
+	float: right;
+	margin: 35px;
+	background-color: #ff1515;
+	width: 100px;
+	height: 30px;
+	text-align: center;
+}
+.texto1{
+	line-height: 20px;
+	font-size: 100%;
+}
+
+h2 {
+	color: #fff;
+	vertical-align: middle;
+	font-family: tangerine;
+}
+.centro{
+	overflow: hidden;
+	width: 80%;
+	margin: auto;
+	max-width: 1000px;
+	margin-top: 30px;
+
+}
+
+/*estilos del reproductor*/
+
+.reproductorsector{
+	overflow: hidden;
+	width: 47%;
+	padding: 10px;
+	float: left;
+}
+
+
+.lc-video {
+	border: none;
+}
+
+.lc-video .vjs-control-bar {
+	color: black;
+}
+
+
+
+/*cartelera*/
+#cartelera{
+}
+.cartelera{
+	overflow: hidden;
+	width: 47%;
+	float: right;
+	padding: 10px;
+
+}
+
+.zonarep{
+	margin-bottom: 10px;
+}
+/* redes sociales */
+
+.mediasocial{
+	overflow: hidden;
+	width: 47%;
+	height: 40px;
+	background-color: #ffffff;
+	margin: 10px;
+	float: left;
+	text-align: center;
+	vertical-align: middle;
+	-webkit-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+
+.redesicon{
+	color: #0E0E0E;
+	margin: 12px;
+	text-decoration: none;
+	display: inline-block;
+	-webkit-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease;
+}
+
+.redesicon:hover{
+	color: #ffffff;
+
+}
+.mediasocial:hover{
+	background-color: #ff0d0d;
+}
+
+.zonainf{
+	width: 100%;
+}
+
+/* tamaño inferior a 850px */
+
+@media screen and (max-width: 850px) {
+	.cartelera{
+		width: 95%;
+		float: none;
+	}
+	.reproductorsector{
+		width: 95%;
+		float: none;
+	}
+	.centro{
+		width: 90%;
+		margin-top: 20px;
+
+	}
+	.mediasocial{
+		overflow: hidden;
+		width: 95%;
+		height: 40px;
+		background-color: #ffffff;
+		margin-top: 5px;
+		float: none;
+		text-align: center;
+		vertical-align: middle;
+	}
+}
+
+/*  tamaño inferior de 500 */
+
+@media screen and (max-width: 500px){
+	.encabezado{
+		height: 70px;
+	}
+	.logoprincipal{
+		float: center;
+		margin-left: auto;
+		margin-right: auto;
+		height: 50px;
+	}
+	divtex{
+		float: left;
+		margin-bottom: 20px;
+	}
+
+}
